@@ -1,17 +1,17 @@
-import sys
 import getopt
-import simplejson as json
+import sys
+
 import pandas as pandas
+import simplejson as json
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import streaming_bulk
-
 
 csvfile = ''
 index = ''
 
 ES = Elasticsearch(
-     cloud_id="COVID-19:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbyQ0MmRkYWE2NTg4Yjc0NDkxYjU4ZjdhZDhkZTRlZjM0YiQ3Mjg4ODZjNTRiNTA0MjIzOTM0N2NiNjNjZDBkM2YyMw==",
-     http_auth=("elastic", "YZe4U2q1RxVMQLM6MC7TpyWQ")
+     cloud_id="Sandbox:ZWFzdHVzMi5henVyZS5lbGFzdGljLWNsb3VkLmNvbTo0NDMkNGE1NzQ5OWUwZDQ2NDJlZGI2ODI3N2U0ODQ1YjdkMjYkMzg4ZGE3Yzc0MDBkNDg5M2EyNDRlOTYyZGUxMDQ2N2U=",
+     basic_auth=("elastic", "DeRiIWGNA9ngmawF8PZU7Hx7")
 )
 
 

@@ -1,14 +1,14 @@
 import base64
-import pandas
-import sys
-import os
-import simplejson as json
 import hashlib
+import os
+import sys
 from datetime import datetime
-from iso3166 import countries
+
+import pandas
+import simplejson as json
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import streaming_bulk
-
+from iso3166 import countries
 
 ES = Elasticsearch(
      cloud_id="COVID-19:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbyQ0MmRkYWE2NTg4Yjc0NDkxYjU4ZjdhZDhkZTRlZjM0YiQ3Mjg4ODZjNTRiNTA0MjIzOTM0N2NiNjNjZDBkM2YyMw==",
